@@ -95,5 +95,19 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px; 
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+.intro .section {
+    padding-top: 220px;
+}
+.intro img {
+    height: 450px;
 }
