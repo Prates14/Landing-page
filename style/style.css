@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 26px;
@@ -50,9 +54,12 @@ p {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    margin: 0 auto;
     padding: 0 30px;
     height: 60px;
+}
+
+.navegation {
+    margin: 0 200px;
 }
 
 .menu ul {
@@ -63,13 +70,13 @@ p {
 
 .logo a {
     color: var(--title-color);
-    text-decoration: none;
 }
 
 ul li a {
     padding: 20px;
     text-decoration: none;
     color: #000;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
 }
 
 nav a:hover{
@@ -78,15 +85,14 @@ nav a:hover{
 }
 
 .main-content {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
 }
 
-.main-content p {
+.welcome p {
     padding-bottom: 120px;
 }
 .section {
+    max-width: 1200px;
     min-height: 100vh;
 }
 
@@ -102,12 +108,53 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 .intro .section {
+    display: flex;
+    flex-direction: column;
     padding-top: 220px;
+    gap: 40px;
 }
+
 .intro img {
     height: 450px;
+}
+
+.toptree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 90px;
+    margin-top: 80px;
+    gap: 30px;
+    color: var(--title-color);
+}
+
+.toptree p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#intro div {
+    margin: 0 120px;
+    padding: 30px;
+}
+
+.portifolio {
+    padding: 80px 30px;
+    margin: 0 auto;
+    counter-reset: portifolio;
+}
+
+.top-jobs {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.section-header {
+    margin-bottom: 80px;
 }
