@@ -1,5 +1,6 @@
 :root {
     --title-color: #1c0033;
+    --white-background: #ffffffd5;
 }
 
 * {
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-    background: #ffffffd5;
+    background: var(--white-background);
 }
 
 h1 {
@@ -84,7 +85,7 @@ ul li a {
 }
 
 nav a:hover{
-    transition: 450ms ease-in-out;
+    transition: all 450ms ease-in-out;
     background-color: #ddd;
 }
 
@@ -92,9 +93,6 @@ nav a:hover{
     margin: 0 auto;
 }
 
-.welcome p {
-    padding-bottom: 120px;
-}
 .section {
     max-width: 1200px;
     min-height: 100vh;
@@ -105,28 +103,27 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.welcome p {
+    padding-bottom: 120px;
 }
 
 .intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 500px;
-}
-
-.intro .section {
-    display: flex;
-    flex-direction: column;
-    padding-top: 220px;
-    gap: 40px;
+    padding: 0px 20px 400px 20px;
+    gap: 30px;
 }
 
 .intro img {
-    height: 450px;
+    height: 400px;
 }
 
-.toptree {
+.topthree {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,11 +134,11 @@ nav a:hover{
     color: var(--title-color);
 }
 
-.toptree h2 {
+.topthree h2 {
     margin-bottom: 30px;
 }
 
-.toptree p {
+.topthree p {
     text-align: center;
     padding-bottom: 15px;
 }
