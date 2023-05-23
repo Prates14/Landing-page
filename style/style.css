@@ -199,3 +199,20 @@ article {
     transform: rotate(10deg);
     font-style: italic;
 }
+
+.gallery-images {
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 360px;
+    box-shadow: 2px -4px 4px rgba(0, 0, 0);
+}
+
+.gallery-images img:hover {
+    transform: scale(1.2) translate(-3%, 3%) rotate(4deg);
+}
+
+.gallery-images img {
+    transition: all 300ms ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
