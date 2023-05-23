@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: #ffffffd5;
+}
+
 h1 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 26px;
@@ -108,6 +112,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 500px;
 }
 
 .intro .section {
@@ -132,6 +137,10 @@ nav a:hover{
     color: var(--title-color);
 }
 
+.toptree h2 {
+    margin-bottom: 30px;
+}
+
 .toptree p {
     text-align: center;
     padding-bottom: 15px;
@@ -150,11 +159,43 @@ nav a:hover{
 
 .top-jobs {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     min-height: 100vh;
 }
 
 .section-header {
     margin-bottom: 80px;
+}
+
+.section-header h2 {
+    padding-bottom: 30px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+article {
+    width: 100%;
+    text-align: start;
+}
+
+.portifolio article > h3 {
+    position: relative;
+    margin: 20px 0 20px 70px;
+    display: flex;
+    align-items: center;
+}
+
+.portifolio article > h3::before {
+    counter-increment: portifolio;
+    content: counter(portifolio);
+    position: absolute;
+    font-size: 80px;
+    left: -70px;
+    transform: rotate(10deg);
+    font-style: italic;
 }
