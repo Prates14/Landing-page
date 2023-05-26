@@ -75,6 +75,7 @@ p {
 
 .logo a {
     color: var(--title-color);
+    text-decoration: underline double 8%;
 }
 
 ul li a {
