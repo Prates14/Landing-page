@@ -142,6 +142,7 @@ nav a:hover{
 .topthree p {
     text-align: center;
     padding-bottom: 15px;
+    min-width: 400px;
 }
 
 #intro div {

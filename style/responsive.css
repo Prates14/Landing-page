@@ -7,7 +7,7 @@
         padding-bottom: 70px;
     }
 
-    .intro {
+    .intro{
         display: block;
     }
 
@@ -23,7 +23,7 @@
         text-align: center;
     }
 
-    .grid-section {
+    .grid-section, .footer-head {
         grid-template-columns: 1fr;
     }
 
@@ -35,5 +35,17 @@
 
     .gallery-images img {
         width: 100%;
+    }
+
+    .footer-img {
+        display: none;
+    }
+
+    .princing-header {
+        margin: 60px 80px 60px 0px;
+    }
+
+    .princing {
+        padding: 50px 50px;
     }
 }
