@@ -12,11 +12,13 @@
     <title>Landing Page</title>
 </head>
 <body>
+    <input type="checkbox" class="close-menu" id="close-menu" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="navegation">
-            <h1 class="logo"><a href="#logo">GPDS</a></h1>
+            <h1 class="logo" onclick="getElementById('close-menu').checked = false"><a href="#logo">GPDS</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top3</a></li>
                     <li><a href="#gallery">Gallery</a></li>

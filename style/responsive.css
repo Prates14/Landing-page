@@ -1,4 +1,46 @@
 @media (max-width: 950px) {
+    .menu {
+        bottom: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .menu > div, .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        font-size: 18px;
+    }
+
+    .menu > div {
+        height: 100vh;
+    }
+    
+    .close-menu-label::after {
+        content: "≡";
+        position: fixed;
+        z-index: 2;
+        top: 10px;
+        right: 10px;
+        background-color: var(--title-color);
+        color: white;
+        font-size: 40px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
     .welcome h2 {
         text-align: center;
     }
