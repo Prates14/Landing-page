@@ -1,4 +1,13 @@
 @media (max-width: 950px) {
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
     .menu {
         bottom: 0;
         text-align: center;
@@ -14,14 +23,15 @@
 
     .menu > div {
         height: 100vh;
+        padding: 0;
     }
     
     .close-menu-label::after {
         content: "≡";
         position: fixed;
         z-index: 2;
-        top: 10px;
-        right: 10px;
+        top: 25px;
+        right: 25px;
         background-color: var(--title-color);
         color: white;
         font-size: 40px;
@@ -63,6 +73,11 @@
 
     .topthree {
         text-align: center;
+        padding: 50px 10px;
+    }
+
+    .topthree p {
+        padding: 0 40px;
     }
 
     .grid-section, .footer-head {
@@ -84,10 +99,12 @@
     }
 
     .princing-header {
-        margin: 60px 80px 60px 0px;
+        margin: 60px 120px 60px 0px;
+        padding-right: 60px;
     }
 
     .princing {
-        padding: 50px 50px;
+        padding: 50px;
+        text-align: center;
     }
 }
