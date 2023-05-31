@@ -218,7 +218,6 @@ article {
 .gallery-images img {
     transition: all 300ms ease-in-out;
     max-width: 100%;
-    height: auto;
 }
 
 .work-header {
