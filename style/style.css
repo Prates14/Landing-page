@@ -329,8 +329,10 @@ fieldset {
 
 .footer-form legend {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-style: italic;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .form-grid {
