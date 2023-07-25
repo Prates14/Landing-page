@@ -62,13 +62,13 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
     padding: 0 30px;
     height: 60px;
 }
 
 .navegation {
     margin: 0 200px;
+    gap: 30px;
 }
 
 .menu ul {
@@ -120,7 +120,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px 400px 20px;
+    padding: 0px 20px 300px 20px;
     gap: 30px;
 }
 
@@ -189,9 +189,10 @@ article {
 
 .portifolio article > h3 {
     position: relative;
-    margin: 20px 0 20px 70px;
+    margin: 20px 0 40px 70px;
     display: flex;
     align-items: center;
+    font-size: 28px;
 }
 
 .portifolio article > h3::before {
@@ -229,23 +230,23 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 90px;
+    padding: 30px 90px 50px 90px;
     margin-top: 40px;
     margin-bottom: 40px;
-    gap: 30px;
     color: var(--title-color);
 }
 
 .princing-header {
-    margin: 60px 80px 60px 80px;
+    margin: 50px 80px 50px 80px;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     max-height: 250px;
     min-height: 380px;
     min-width: 330px;
+    gap: 20px;
 }
 
 .responsive-table {
